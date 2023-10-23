@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Survey Form</h1>
+        <form id="surveyForm">
+            <div class="form-group">
+                <label for="Name">Name </label>
+                <label for="email" style="margin-left:130px;">Email </label>
+                <br>
+                <input type="text" id="Name" required>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" required>
+                    <option value="">Select a country</option>
+                    <option value="us">United States</option>
+                    <option value="ind">India</option>
+                    <option value="ca">Canada</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other">
+                <label for="other">Other</label>
+            </div>
+            <div class="radio-group">
+                Is this first time you are using our products & service ?<br>
+                <input type="radio">Yes
+                <input type="radio">No<br>
+            </div>
+            <div class="radio-group">
+                Would you suggest for your friends and colleagues ?<br>
+                <input type="radio">Yes
+                <input type="radio">No<br>
+            </div>
+               
+            <div class="radio-group">
+                How satisfied you overall with our company overall ?<br>
+                <input type="radio">Yes
+                <input type="radio">No<br>
+            </div>
+            <div class="textarea">
+                Do you have any suggestions for our service ?
+                <input type="textarea"style="height:100px;width:90%">
+            </div>
+            <div class="form-group">
+                <button type="button" id="submitBtn">Submit</button>
+                <button type="button" id="resetBtn">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Survey Form Data</h2>
+            <div id="popupData"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
